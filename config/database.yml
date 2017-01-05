@@ -81,5 +81,5 @@ test:
 production:
   <<: *default
   database: paie_production
-  username: paie
-  password: <%= ENV['PAIE_DATABASE_PASSWORD'] %>
+  username: deploy
+   # password: <%= ENV['PAIE_DATABASE_PASSWORD'] %>

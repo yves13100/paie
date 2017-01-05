@@ -1,14 +1,14 @@
 # config valid only for current version of Capistrano
 lock "3.7.1"
 
-set :application, "tupaiesjachete"
-set :repo_url, "git@github.com:yves13100/tupaiesjachete.git"
+set :application, "paie"
+set :repo_url, "git@github.com:yves13100/paie.git"
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Default deploy_to directory is /var/www/my_app_name
-set :deploy_to, "/home/yves/tupaiesjachete"
+set :deploy_to, "/home/yves/paie"
 set :use_sudo, false
 set :bundle_binstubs, nil
 set :linked_files, fetch(:linked_files, []).push('config/database.yml')
