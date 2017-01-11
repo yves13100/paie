@@ -71,7 +71,7 @@ server '192.168.1.12',
   user: fetch(:user),
   primary: true
 
-set :deploy_to, "/home/#{fetch(:user)}/#{fetch(:application)}"
+set :deploy_to, "/home/#{fetch(:user)}/apps/#{fetch(:application)}"
 
 set :ssh_options, {
   forward_agent: true,

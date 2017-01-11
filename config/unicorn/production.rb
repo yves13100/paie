@@ -1,4 +1,4 @@
-root = "/home/yves/paie/current"
+root = "/home/yves/apps/paie/current"
 working_directory root
 
 pid "#{root}/tmp/pids/unicorn.pid"
@@ -10,7 +10,7 @@ worker_processes Integer(ENV['WEB_CONCURRENCY'])
 timeout 30
 preload_app true
 
-listen '/tmp/unicorn.spui.sock', backlog: 64
+listen '/home/yves/sock/unicorn.paie.sock', backlog: 64
 
 before_fork do |server, worker|
   Signal.trap 'TERM' do

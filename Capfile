@@ -18,6 +18,7 @@
 #   https://github.com/capistrano/rails
 #   https://github.com/capistrano/passenger
 #
+require 'capistrano/scm/git'
 require 'capistrano/setup'
 require 'capistrano/deploy'
 require 'capistrano/rvm'

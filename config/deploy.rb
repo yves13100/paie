@@ -8,7 +8,7 @@ set :repo_url, "git@github.com:yves13100/paie.git"
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Default deploy_to directory is /var/www/my_app_name
-set :deploy_to, "/home/yves/paie"
+set :deploy_to, "/home/yves/apps/paie"
 set :use_sudo, false
 set :bundle_binstubs, nil
 set :linked_files, fetch(:linked_files, []).push('config/database.yml')
