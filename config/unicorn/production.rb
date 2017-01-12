@@ -2,7 +2,7 @@ root = "/home/yves/apps/paie/current"
 working_directory root
 shared_dir = "/home/yves/apps/paie/shared"
 
-pid "#{shared_dir}/pids/unicorn.pid"
+pid "#{root}/tmp/pids/unicorn.pid"
 stderr_path "#{shared_dir}/log/unicorn.log"
 stdout_path "#{shared_dir}/log/unicorn.log"
 
